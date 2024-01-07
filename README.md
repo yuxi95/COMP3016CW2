@@ -55,5 +55,28 @@ The entry point of the program is the main() function. It initializes the GLFW w
 In main(), the createIrrKlangDevice() function from the irrKlang sound library is used to initialize audio playback. Load models from .obj files using the Model class which depends on Assimp. Texture loading utilizes stb_image. Cubemap texture configured for skybox rendering.
 The processInput() function called every frame handles key presses for movement and other controls. Handle mouse movement and scrolling using GLFW registered callbacks. Timer tracks deltaTime between frames.
 Rendering occurs by clearing the buffer, setting the viewpoint matrix, binding the texture, and issuing draw calls. The framebuffer resize callback handles window size changes. By encapsulating rendering and input handling, the main loop is kept clean and focused on high-level program flow.  
+# How the program code works
+Initialization: Use GLFW and OpenGL to initialize the window and load the OpenGL function pointer.
+Load Shader: Use the Shader class to load the skybox and model shaders.
+Loading models and textures: Use the Assimp library to load water droplets and scene models, as well as skybox textures.
+Audio initialization: Use the IrrKlang library to initialize the audio engine and load background music.
+Main loop: Update camera state, handle input, render models and skyboxes, and play/toggle audio in the main loop.
+Frame rate calculation: Calculate and display frame rate and camera status at regular intervals.
+# Code organization structure:
+Shader class: Encapsulates the function of loading and using shaders.
+Model class: Encapsulates the function of loading and rendering models.
+Camera class: Handles camera movement, rotation and scaling.
+SoundEngine: An audio engine using the IrrKlang library to handle audio initialization and playback.
+Main function and callback function: including window callback, input processing, frame rate calculation, etc.
+Input processing function: handles keyboard and mouse input, as well as audio switching and other functions.
+# Code features:
+Skybox effect: A skybox is created by loading six textures.
+Audio interaction: Use the IrrKlang library to implement audio playback and switching functions.
+Multi-scene switching: You can switch between different scenes by pressing F.
+Camera control: Users can freely control the camera through the mouse and keyboard, as well as adjust the camera's movement speed.
+Origin and uniqueness:
+Source of inspiration: The code involves comprehensive applications of graphics rendering, audio processing and user input. It is a graphics program based on OpenGL and GLFW.
+Project Start: Start with a basic graphics rendering project and gradually add audio processing, user interaction and other functions.
+Unique Features: Skybox effects, multi-scene switching, and audio interaction give it some unique features among graphics programs.
 
 [YouTube]: https://youtu.be/acNh6Cdq9TU?si=Ar-eKes7n9xwUh0D)https://youtu.be/acNh6Cdq9TU?si=Ar-eKes7n9xwUh0D
