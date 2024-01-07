@@ -56,6 +56,4 @@ In main(), the createIrrKlangDevice() function from the irrKlang sound library i
 The processInput() function called every frame handles key presses for movement and other controls. Handle mouse movement and scrolling using GLFW registered callbacks. Timer tracks deltaTime between frames.
 Rendering occurs by clearing the buffer, setting the viewpoint matrix, binding the texture, and issuing draw calls. The framebuffer resize callback handles window size changes. By encapsulating rendering and input handling, the main loop is kept clean and focused on high-level program flow.  
 
-The YouTube Link
-...
 [YouTube]: https://youtu.be/acNh6Cdq9TU?si=Ar-eKes7n9xwUh0D)https://youtu.be/acNh6Cdq9TU?si=Ar-eKes7n9xwUh0D
