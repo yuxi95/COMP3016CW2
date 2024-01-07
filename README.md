@@ -36,8 +36,8 @@ The scene can be moved by moving it with the mouse
 | **Ascend** (Q) | **Ascend** (E) | **Descend** (E)  |  
 
 
-
-
+The W, A, S, and D keys provide forward, left, right, and backward movement respectively. Q and E control vertical movement, while the arrow keys rotate the camera view. Use the mouse to adjust camera pitch and yaw. Scroll controls the zoom level.
+While running, the ESC key will close the application window. Spacebar pauses background music playback. Keys 1, 2 and 3 will change the music track. Pressing F will switch to the detailed scene model, while C resets the camera position. Hold down Shift to increase movement speed. Users can use these controls to freely navigate within the model and view the rendering from different angles.
 In this document, **space** represents music pause
 
 
